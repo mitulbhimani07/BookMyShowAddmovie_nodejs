@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Movies</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" src="/assets/css/style.css" type="text/css"> -->
+</head>
+<style>
+    body {
+        background: linear-gradient(to bottom, #b3b8cc, #f0a34f);
+        min-height: 100vh;
+}
+
+.container {
+    max-width: 500px;
+    padding-top: 50px;
+}
+.btn a , .navbar-brand{
+    color: white;
+    text-decoration: none;
+}
+.nav-link{
+    color: black;
+}
+</style>
+<body>
+    <a href="/"><button>Main Page</button></a>
+    <div class="container mt-5">
+        <h2 class="mb-4">Registration Form</h2>
+        <form  method="post" action="/insertMovies" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="title">Title:</label>
+                <input type="text" class="form-control" id="name" name="title" placeholder="Enter your title">
+            </div>
+            <div class="form-group">
+                <label for="gender">Rating:</label>
+                <input type="radio" id="email" name="rating" value="1" required> 1
+                <input type="radio" id="email" name="rating" value="2" required> 2
+                <input type="radio" id="email" name="rating" value="3" required> 3
+                <input type="radio" id="email" name="rating" value="4" required> 4
+                <input type="radio" id="email" name="rating" value="5" required> 5
+                <input type="radio" id="email" name="rating" value="5" required> 6
+                <input type="radio" id="email" name="rating" value="5" required> 7
+                <input type="radio" id="email" name="rating" value="5" required> 8
+                <input type="radio" id="email" name="rating" value="5" required> 9
+                <input type="radio" id="email" name="rating" value="5" required> 10
+            </div>
+            <div class="form-group">
+                <label for="type">Movie Type:</label>
+                <input type="text" class="form-control" id="email" name="type" placeholder="Enter your type">
+            </div> 
+            <div class="form-group">
+                <label for="language">Movie Language </label>
+                <input type="text" class="form-control" id="email" name="language" placeholder="Enter your language">
+            </div>
+            <div class="form-group">
+                <label for="movietime">Movie Time</label>
+                <input type="text" class="form-control" id="email" name="movietime" placeholder="Enter Movie Time">
+            </div>
+            <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" class="form-control" id="email" name="date" placeholder="Enter Movie date">
+            </div>
+            <div class="form-group">
+                <label for="image">Movie Image:</label>
+                <input type="file" class="form-control" id="email" name="image" placeholder="Enter Movie image">
+            </div>
+            <input type="submit" class="btn btn-primary" value="Submit">
+        </form>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

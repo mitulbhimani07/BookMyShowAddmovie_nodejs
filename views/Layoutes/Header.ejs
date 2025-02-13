@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie Tickets,Plays,Sports,Events & Cinemas near Ahemdabad-..</title>
+  <link rel="stylesheet" href="/Style/style.css" />
+  <link rel="icon" href="title_logo.png">
+
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+  <div class="maincontainer">
+    <!-- navbar --> 
+    <header>
+      <nav>
+        <!-- nav section-1 -->
+        <div class="nav_1">
+          <div class="nav_width">
+            <div class="nav_1_sub">
+              <a href="/"><img src="/Navbar/logo.png" alt="logo" /></a>
+              <div class="search_bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input placeholder="Search for Movies,Events,Plays,Sports and Activities" name="Moviesearch"  >
+                </input>
+              </div>
+              
+            </div>
+  
+            <form>
+              <select>
+                <option value="" selected>Ahmedabad</option>
+                <option value="">Delhi</option>
+                <option value="">Mumbai</option>
+                <option value="">Hyderabad</option>
+                <option value="">Bengaluru</option>
+                <option value="">Pune</option>
+              </select>
+              <button><a href="./login.html" id="login">Sign in</a></button>
+              <i class="fa-solid fa-bars"></i>
+            </form>
+
+            <!-- for responsive  -->
+            
+          </div>
+  
+          <div class="nav_1_resp">
+            <div class="nav1_l">
+              <h2>It All Starts Here!</h2>
+              <span>Ahmedabad ›</span>
+            </div>
+            <form>
+              <button>Use App</button>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </form>
+          </div>
+        </div>
+  
+        <!-- nav section-2 -->
+        <div class="nav_2">
+          <div class="nav_width">
+            <ul class="nav_2_sub1">
+              <li><a href="/addmovies">Add Movies</a></li>
+              <li><a href="/views">Stream</a></li>
+              <li><a href="./events.html">Events</a></li>
+              <li><a href="./plays.html">Plays</a></li>
+              <li><a href="./sport.html">Sports</a></li>
+              <li><a href="./activity.html">Activities</a></li>
+              <li><a href="./buzz.html">Buzz</a></li>
+              <li><a href="./icc_men.html"><img src="/Navbar/cwc23.avif" alt="iciccricket"><sup>NEW</sup></a>
+              </li>
+            </ul>
+            <ul class="nav_2_sub2">
+              <li><a href="#">ListYourShow</a></li>
+              <li><a href="#">Corporates</a></li>
+              <li><a href="#">Offers</a></li>
+              <li><a href="#">Gift Cards</a></li>
+            </ul>
+            
+          </div>
+          <div class="nav2_resp">
+            <a href="./movies.html"><img src="Navbar/img1.png" alt="nav1"></a>
+            <a href="./sport.html"><img src="Navbar/img2.avif" alt="nav2"></a>
+            <a href="./icc_men.html"><img src="Navbar/img3.avif" alt="nav3"></a>
+            <a href="./stream.html"><img src="Navbar/img4.avif" alt="nav4"></a>
+            <a href="./plays.html"><img src="Navbar/img5.avif" alt="nav5"></a>
+            <a href="./events.html"><img src="Navbar/img6.avif" alt="nav6"></a>
+            <a href="./activity.html"><img src="Navbar/img7.avif" alt="nav7"></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+  
+    <!----------------------------------------------- main section ---------------------------------------------------->
+ 
+    
+    <!-- ------------------------------------------------------------footer section----------------------------------------------------->
+ 
+ 
+  </div>
+
+
+
+  <!--owl carasouel cdn link -->
+  <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      ></script>
+  <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+          integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+        ></script>
+  <script>
+          $(".owl-carousel").owlCarousel({
+            margin: 0,
+            loop: true,
+            items: 1,
+            autoplay:true,
+            autoplayTimeout:2000,
+            autoplayHoverPause:true
+          });
+          $('.play').on('click',function(){
+          owl.trigger('play.owl.autoplay',[2000])
+          });
+          $('.stop').on('click',function(){
+          owl.trigger('stop.owl.autoplay')
+          })
+  </script>
+
+  <!-- font-awesome-icon-script -->
+  <script src="https://kit.fontawesome.com/f24426156c.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

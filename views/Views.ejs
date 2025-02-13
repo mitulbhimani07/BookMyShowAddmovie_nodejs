@@ -1,0 +1,97 @@
+<%- include('./Layoutes/Header') %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pushpa 2: The Rule</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .movie-poster {
+            width: 300px;
+            margin-bottom: 20px;
+        }
+
+        .movie-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .movie-rating {
+            color: #ff9900;
+            margin-bottom: 10px;
+        }
+
+        .movie-info {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 600px;
+            margin-bottom: 20px;
+        }
+
+        .movie-info-item {
+            text-align: center;
+            flex: 1;
+        }
+
+        .movie-description {
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .button {
+            background-color: #ff9900;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="<%=singalMovie.image%>" alt="Pushpa 2: The Rule" class="movie-poster">
+
+        <div class="movie-title"><%= singalMovie.title %></div>
+
+        <div class="movie-rating"><%= singalMovie.rating %></div>
+
+        <div class="movie-info">
+            <div class="movie-info-item">
+                <p><%= singalMovie.type %></p>
+            </div>
+            <div class="movie-info-item">
+                <p><%= singalMovie.language %></p>
+            </div>
+            <div class="movie-info-item">
+                <p><%= singalMovie.movietime %><%= singalMovie.date %></p>
+            </div>
+        </div>
+
+        <button class="button">Book Tickets</button>
+         
+        <div class="movie-description">
+            <p>Pushpa 2: The Rule picks up from the explosive events of the first part, following Pushpa's meteoric rise as he expands his red sandalwood empire beyond borders. As tensions escalate with rival factions and the authorities, his growing ambitions draw him into intense confrontations and political upheavals.</p>
+        </div>
+    </div>
+
+</body>
+</html>
